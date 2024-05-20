@@ -38,3 +38,9 @@ Run the project
 
 And that's it, you're all set!
 
+## Warning
+
+If there is no liquidity in the 0.3% pool, the transaction will fail. It will use default slippage - if there is no way to complete the transaction at the current slippage level, gas will just overflow the limit, causing it to fail.
+
+
+
