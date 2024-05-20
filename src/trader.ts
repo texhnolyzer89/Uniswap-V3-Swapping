@@ -21,7 +21,7 @@ async function swapEthToUsdc() {
 
   const inputAmount = AMOUNT_OF_ETH_TO_SWAP
   const amountIn = ethers.parseUnits(
-    inputAmount.toString(),
+    '1',
     CurrentConfig.tokens.in.decimals
   )
   
@@ -53,7 +53,7 @@ async function swapEthToUsdc() {
     tokenOut: CurrentConfig.tokens.out.address,
     fee: FeeAmount.MEDIUM,
     recipient: WALLET_ADDRESS,
-    amountIn: amountIn,
+    amountIn: Number(amountIn) * inputAmount,
     amountOutMinimum: 0,
     sqrtPriceLimitX96: 0,
   }
