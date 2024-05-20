@@ -19,7 +19,7 @@ export const WALLET_MNEMONIC = process.env.WALLET_MNEMONIC ?? ""
 export const WETH_TOKEN = new Token(
   ChainId.BASE,
   '0x4200000000000000000000000000000000000006',
-  6,
+  18,
   'WETH',
   'Wrapped Ether'
 )
@@ -56,4 +56,4 @@ export const MAX_PRIORITY_FEE_PER_GAS = 100000000000
 export const TOKEN_AMOUNT_TO_APPROVE_FOR_TRANSFER = 2000
 // VALUE TO BIGINT
 export const GAS_LIMIT = 250000
-export const AMOUNT_OF_ETH_TO_SWAP = 0.001
+export const AMOUNT_OF_ETH_TO_SWAP = 0.0000001
